@@ -1,0 +1,103 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 20px;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Fix Logo Size and Position */
+.navbar-logo img {
+    width: 180px; /* Adjust the logo size */
+    height: auto;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #006838;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    /* Fix for Laptop Screens */
+    .navbar-container {
+        width: 95%; /* Keeps links aligned */
+    }
+
+    .nav-menu {
+        gap: 15px; /* Reduce spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Tablet & Mobile */
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 50%;
+        transform: translateX(50%); /* Centers the menu */
+        background: #ffffff;
+        width: 80%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 30px;
+        border-radius: 8px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* Fix Home Page Content Overlapping with Navbar */
+.home-container {
+    padding-top: 80px; /* Ensures the hero section starts below the navbar */
+}

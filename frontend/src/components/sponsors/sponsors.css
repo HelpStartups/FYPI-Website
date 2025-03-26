@@ -1,0 +1,111 @@
+/* Sponsors Page */
+.sponsors-container {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 60px;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #006838;
+    margin-bottom: 30px;
+}
+
+/* Sponsors Grid */
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Sponsor Card */
+.sponsor-card {
+    background: #ffffff; /* White background */
+    border: 2px solid #006838; /* Green border */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition:
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+}
+
+.sponsor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sponsor Logo */
+.sponsor-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Learn More Button */
+.btn-learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #006838;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background: #004d2f;
+}
+
+/* Become a Partner Section */
+.partner-section {
+    margin-top: 50px;
+    padding: 40px 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.partner-section h2 {
+    font-size: 28px;
+    color: #006838;
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #25d366;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebea5;
+}
+
+.whatsapp-icon {
+    font-size: 24px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .sponsors-grid {
+        grid-template-columns: 1fr;
+    }
+}

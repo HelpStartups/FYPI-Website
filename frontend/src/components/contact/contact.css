@@ -1,0 +1,134 @@
+.contact-wrapper {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #f4fef8; /* soft light green background */
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+/* Section Heading */
+.contact-heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #006838;
+}
+
+/* Layout */
+.contact-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Common Box */
+.contact-box {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    background: #ffffff; /* white background for both */
+}
+
+/* Info Box */
+.info-box {
+    border: 2px solid #006838;
+}
+
+/* Grid inside Info Box */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-box h3 {
+    color: #006838;
+    margin-bottom: 20px;
+}
+
+.info-box h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #111111;
+}
+
+.info-box p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Form Box */
+.form-box {
+    background: #e6f9ee; /* light green box */
+    border: 2px solid #006838;
+    color: #111111;
+}
+
+.form-box h3 {
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button */
+button {
+    background: #006838;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #004d2f;
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 22px;
+    margin-right: 10px;
+    color: #006838;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    background: #ffffff;
+    color: #006838;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}

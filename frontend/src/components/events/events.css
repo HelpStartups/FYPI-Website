@@ -1,0 +1,132 @@
+/* Page Container */
+.events-container {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #006838;
+    margin-bottom: 30px;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Event Cards */
+.event-card {
+    background: linear-gradient(45deg, #006838, #00a550);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition:
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+    position: relative;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.event-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+/* Green Championship Section */
+.green-championship {
+    margin-top: 50px;
+    padding: 40px 20px;
+    background: #f0f0f0;
+}
+
+.green-championship h2 {
+    font-size: 28px;
+    color: #006838;
+}
+
+.green-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Green Championship Cards */
+.green-card {
+    background: linear-gradient(45deg, #006838, #00a550);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition:
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+}
+
+.green-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Register Button */
+.btn-register {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #006838;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn-register:hover {
+    background: #ffd700;
+    color: #000000;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    /* Laptops & Tablets */
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .green-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile */
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}

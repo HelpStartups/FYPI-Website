@@ -1,0 +1,113 @@
+.tickets-section {
+    padding: 60px 30px;
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    margin-top: 60px;
+}
+
+.tickets-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.tickets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.ticket-card,
+.expo-card {
+    background: #ffffff;
+    border: 2px solid #22c55e;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket-card h2 {
+    text-align: center;
+    color: #16a34a;
+    margin-bottom: 15px;
+}
+
+.ticket-card ul,
+.expo-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ticket-card ul li,
+.expo-column ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.ticket-card ul li svg,
+.expo-column ul li svg {
+    color: #16a34a;
+}
+
+.bottom-section,
+.expo-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #16a34a;
+}
+
+.ticket-btn,
+.details-btn {
+    display: inline-block;
+    background: #16a34a;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.ticket-btn:hover {
+    background: #15803d;
+}
+.bbbb {
+    color: #15803d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details-btn {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #3b82f6;
+}
+
+.expo-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.expo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
