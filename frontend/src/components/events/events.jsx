@@ -54,23 +54,28 @@ const greenChampionship = [
     title: "Nukkad for Nature",
     description:
       "Street play competition to spread awareness on climate change.",
+    link: "https://unstop.com/p/nukkad-for-nature-c-summit25-helpstartup-1442601",
   },
   {
     title: "The Green Startup Showdown",
     description: "Startup pitching competition for sustainable ventures.",
+    link: "https://unstop.com/p/the-green-startup-showdown-c-summit25-helpstartup-1442644",
   },
   {
     title: "The Sustainability Challenge",
     description:
       "Teams pitch solutions to real-world problems posed by sustainability-focused brands.",
+    link: "https://unstop.com/p/the-sustainability-challenge-c-summit25-helpstartup-1457301?lb=RAVBOZu8",
   },
   {
     title: "Waste to Wealth Innovation",
     description: "Teams present products made from waste materials.",
+    link: "https://unstop.com/p/waste-to-wealth-innovation-c-summit25-helpstartup-1457300?lb=RAVBOZu8",
   },
   {
     title: "Clash of Perspectives: The Climate Debate",
     description: "Debate competition on sustainability-related topics.",
+    link: "https://unstop.com/p/clash-of-perspectives-the-climate-debate-c-summit25-helpstartup-1457324?lb=RAVBOZu8",
   },
 ];
 
@@ -114,6 +119,7 @@ const Events = () => {
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
+
       <div className="events-container">
         <h1 className="page-title">Events at C-Summit'25</h1>
 
@@ -149,7 +155,12 @@ const Events = () => {
               <div className="green-card" key={index}>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <a href="" className="btn-register">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-register"
+                >
                   Register
                 </a>
               </div>
